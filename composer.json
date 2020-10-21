@@ -1,0 +1,22 @@
+{
+	"name": "exinfinite/ServerEvent",
+	"description": "server send event",
+	"version": "1.0.0",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Exinfinite Chen",
+			"email": "chen.min.home@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Exinfinite\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=5.6"
+	}
+}
