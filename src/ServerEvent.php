@@ -11,6 +11,9 @@ class ServerEvent {
     static function setRetry($ms) {
         self::$_cols['retry'] = $ms;
     }
+    static function close() {
+        exit();
+    }
     /**
      * send stream to client
      *
