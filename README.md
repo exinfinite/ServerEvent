@@ -1,3 +1,7 @@
+[![Latest Stable Version](https://poser.pugx.org/exinfinite/server-event/v)](//packagist.org/packages/exinfinite/server-event)
+[![Total Downloads](https://poser.pugx.org/exinfinite/server-event/downloads)](//packagist.org/packages/exinfinite/server-event)
+[![License](https://poser.pugx.org/exinfinite/server-event/license?1.1.0)](//packagist.org/packages/exinfinite/server-event)
+
 # Server Send Event
 
 [Server Send Event MDN參考](https://developer.mozilla.org/zh-TW/docs/Web/API/Server-sent_events/Using_server-sent_events)
