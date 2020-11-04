@@ -5,7 +5,7 @@
 ### 安裝
 
 ```php
-composer require Exinfinite\ServerEvent
+composer require exinfinite/server-event
 ```
 
 ### 使用
