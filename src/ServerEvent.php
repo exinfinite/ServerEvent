@@ -1,17 +1,24 @@
 <?php
 namespace Exinfinite;
+header("X-Accel-Buffering: no"); //for nginx
+header("Cache-Control: no-cache");
+header("Content-Type: text/event-stream");
 class ServerEvent {
-    protected static $_cols = [];
-    static function setId($str) {
+    protected static $_cols = [
+        'id' => null,
+        'event' => null,
+        'retry' => null,
+    ];
+    public static function setId($str) {
         self::$_cols['id'] = $str;
     }
-    static function setEvent($str) {
+    public static function setEvent($str) {
         self::$_cols['event'] = $str;
     }
-    static function setRetry($ms) {
+    public static function setRetry($ms) {
         self::$_cols['retry'] = $ms;
     }
-    static function close() {
+    public static function close() {
         exit();
     }
     /**
@@ -23,10 +30,7 @@ class ServerEvent {
      * https://developer.mozilla.org/zh-TW/docs/Web/API/Server-sent_events/Using_server-sent_events#%E4%BA%8B%E4%BB%B6%E4%B8%B2%E6%B5%81%EF%BC%88Event_Stream%EF%BC%89%E6%A0%BC%E5%BC%8F
      * @return void
      */
-    static function shot($data, $opt = []) {
-        header("X-Accel-Buffering: no"); //for nginx
-        header("Cache-Control: no-cache");
-        header("Content-Type: text/event-stream");
+    public static function shot($data, $opt = []) {
         self::$_cols = array_merge(self::$_cols, $opt);
         $_msg = [];
         call_user_func(function ($opt) use (&$_msg) {
