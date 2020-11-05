@@ -1,6 +1,8 @@
-[![Latest Stable Version](https://poser.pugx.org/exinfinite/server-event/v)](//packagist.org/packages/exinfinite/server-event)
-[![Total Downloads](https://poser.pugx.org/exinfinite/server-event/downloads)](//packagist.org/packages/exinfinite/server-event)
-[![License](https://poser.pugx.org/exinfinite/server-event/license?1.1.0)](//packagist.org/packages/exinfinite/server-event)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/exinfinite/server-event)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/exinfinite/ServerEvent)
+![Packagist Version](https://img.shields.io/packagist/v/exinfinite/server-event)
+![Packagist Downloads](https://img.shields.io/packagist/dt/exinfinite/server-event)
+![GitHub](https://img.shields.io/github/license/exinfinite/ServerEvent)
 
 # Server Send Event
 
