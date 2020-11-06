@@ -18,9 +18,11 @@ composer require exinfinite/server-event
 
 後端事件源 source.php
 ```php
+header("Cache-Control: no-cache");
+header("Content-Type: text/event-stream");
 use Exinfinite\ServerEvent;
-
 $count = 1;
+$interval = 30;
 ServerEvent::setEvent('userconnect');//event type
 while (true) {
     ServerEvent::setId($count);//event id
@@ -30,7 +32,7 @@ while (true) {
         ServerEvent::close();//關閉連線
     }
     $count++;
-    sleep(1);
+    sleep($interval);
 }
 ```
 

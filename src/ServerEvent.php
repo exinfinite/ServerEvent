@@ -1,8 +1,5 @@
 <?php
 namespace Exinfinite;
-header("X-Accel-Buffering: no"); //for nginx
-header("Cache-Control: no-cache");
-header("Content-Type: text/event-stream");
 class ServerEvent {
     protected static $_cols = [
         'id' => null,
